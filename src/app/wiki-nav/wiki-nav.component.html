@@ -26,18 +26,18 @@
       </button>
       <span>Seneca Global Wiki</span>
       <!-- This fills the remaining space of the current row -->
-  <div class="example-fill-remaining-space">
-    <input id="search-input" type="text" placeholder="Search..." class="input">
-  </div>
-
-  <div>
-    <ul>
-      <li routerLink="wiki/edit" class="active"><i class="material-icons"> edit</i>Edit</li>
-      <li routerLink="wiki/create"><i class="material-icons"> add</i>Create</li>
-    </ul>
-  </div>
-
-
+      <div class="example-fill-remaining-space">
+        <input id="search-input" type="text" placeholder="Search..." class="input">
+      </div>
+      <div>
+        <ul>
+          <!--<li routerLink="wiki/edit" class="active"><i class="material-icons"> edit</i>Edit</li> -->
+          <li routerLink="wiki/create"><i class="material-icons"> add</i>Create</li>
+        </ul>
+      </div>
     </mat-toolbar>
+    <div class="main-content ">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

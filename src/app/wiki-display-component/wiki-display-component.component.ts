@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { throwToolbarMixedModesError } from '@angular/material';
 
 @Component({
   selector: 'app-wiki-display-component',

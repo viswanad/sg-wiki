@@ -9,6 +9,7 @@ import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, Mat
 import { WikiDisplayComponentComponent } from './wiki-display-component/wiki-display-component.component';
 import { WikiEditComponentComponent } from './wiki-edit-component/wiki-edit-component.component';
 import { AppRoutingModule } from './app-routing.module';
+import { CovalentTextEditorModule } from '@covalent/text-editor';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CovalentTextEditorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
