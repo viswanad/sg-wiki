@@ -10,6 +10,8 @@ import { WikiDisplayComponentComponent } from './wiki-display-component/wiki-dis
 import { WikiEditComponentComponent } from './wiki-edit-component/wiki-edit-component.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CovalentTextEditorModule } from '@covalent/text-editor';
+import { HttpClientModule } from '@angular/common/http';
+import { WikiPagesService } from './services/wiki-pages.service';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import { CovalentTextEditorModule } from '@covalent/text-editor';
     MatIconModule,
     MatListModule,
     AppRoutingModule,
-    CovalentTextEditorModule
+    CovalentTextEditorModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [WikiPagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

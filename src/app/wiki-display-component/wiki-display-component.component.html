@@ -1,3 +1,7 @@
 <h1>
   {{ page }} <button routerLink="/wiki/edit/{{page}}" class="active"><i class="material-icons"> edit</i></button>
 </h1>
+<div *ngIf="wikiPage">
+  {{wikiPage.wiki_page_content}}
+</div>
+

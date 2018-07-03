@@ -1,5 +1,5 @@
-<td-text-editor [value]="page" [options]="options" #textEditor></td-text-editor>
+<td-text-editor [value]="wikiPage.wiki_page_content" [options]="options" *ngIf="wikiPage" #textEditor></td-text-editor>
 <div class="form-buttons">
-  <button mat-raised-button color="primary">Save</button>
+  <button mat-raised-button color="primary" (click)="saveWikipage()">Save</button>
   <button mat-raised-button> Cancel</button>
 </div>
